@@ -1,1 +1,1 @@
-# javascript-react-ui
+# javascript-client

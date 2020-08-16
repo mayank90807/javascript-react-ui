@@ -1,0 +1,382 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-small {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.font-med {
+    font-size: 15px;
+}
+
+.sub-heading {
+    color: gray;
+}
+
+.container {
+    background: url(../images/background.jpg );
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.co {
+    display: flex;
+    box-shadow: 5px 5px 5px grey;
+    width: 85%;
+    height: 90%;
+    border: 1px solid lightgray;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.co>div {
+    background-color: white;
+    border-bottom: 0.5px solid lightgray;
+    align-items: center;
+}
+
+.co-header {
+    flex: 8;
+    display: flex;
+    align-items: center;
+}
+
+.co-header__text {
+    padding: 10px;
+    font-weight: bold;
+    flex-grow: 10;
+}
+
+.breadcrumbs {
+    padding: 10px;
+    flex-grow: 88;
+}
+
+.breadcrumbs li {
+    display: inline;
+    padding-left: 10px;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumbs li+li:before {
+    content: "/";
+    padding-right: 10px;
+}
+
+.breadcrumbs--active-element {
+    font-weight: bold;
+}
+
+.co-header__close-button {
+    padding: 10px;
+    flex-grow: 2;
+}
+
+.co-body {
+    flex: 92;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+}
+
+.co-body>div {
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.co-body__payment {
+    flex: 60;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.co-body__payment>div {
+    padding-top: 8px;
+}
+
+.co-body--title-gray {
+    color: gray;
+    font-weight: bold;
+}
+
+.co-body__wallet {
+    height: 100%;
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.wallet__title {
+    width: 100%;
+    flex: 1;
+}
+
+.wallet__options {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex: 9;
+}
+
+.wallet__options>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+    transition: transform .1s;
+}
+
+.wallet__options>div>span {
+    display: block;
+}
+
+.wallet__options>div:hover {
+    border: 2px solid lightgray;
+    background-color: floralwhite;
+    border-radius: 10px;
+    transform: scale(1.1);
+}
+
+.newcard__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    max-width: 350px;
+    flex-grow: 1;
+    flex-basis: auto;
+    box-sizing: border-box;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.form-input--half {
+    width: 49%;
+    box-sizing: border-box;
+}
+
+.form-input--button {
+    background-color: #4caf50;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 0px;
+}
+
+.co-body__newcard {
+    flex: 6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.newcard__title {
+    width: 100%;
+}
+
+.co-body__cart {
+    flex: 40;
+    display: flex;
+    align-content: space-between;
+    background-color: whitesmoke;
+    flex-direction: column;
+}
+
+.cart__items {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.cart__items>div {
+    padding: 8px;
+}
+
+.c-item {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid darkgray;
+}
+
+.c-item__img {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.c-item__details {
+    flex: 8;
+    padding: 5px;
+}
+
+.c-item__total {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart__pricing {
+    flex: 2;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+}
+
+.cart__pricing>div {
+    border-top: 1px solid darkgray;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.pricing__calc {
+    flex: 8;
+}
+
+.pricing__total {
+    flex: 2;
+}
+
+.pricing__calc>div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.pricing__total>div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.pricing__calc-type {
+    flex: 8;
+}
+
+.pricing__calc-rate {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media screen and (min-width: 992px) {
+    .co {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .co-body__payment {
+        flex: 3;
+    }
+    .co-body__cart {
+        flex: 2;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .co {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:768px) {
+    .co-body__payment {
+        flex: 1;
+    }
+    .co-body__cart {
+        flex: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .co {
+        height: unset;
+    }
+    .co-body {
+        flex-direction: column;
+    }
+    .co-body__payment {
+        display: flex;
+        order: 2;
+    }
+    .co-body__cart {
+        display: flex;
+        order: 1;
+    }
+    .container {
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .wallet__options {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .c-item__img {
+        flex: 2;
+    }
+    .c-item__details {
+        flex: 7;
+    }
+    .c-item__total {
+        flex: 3;
+    }
+    .pricing__calc-rate {
+        flex: 4;
+    }
+    .pricing__calc-type {
+        flex: 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .breadcrumbs {
+        visibility: hidden;
+    }
+}

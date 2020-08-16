@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="co">
+            <div class="co-header">
+                <div class="co-header__text">
+                    <p>Checkout</p>
+                </div>
+                <div class="breadcrumbs">
+                    <ol>
+                        <li><a href="">Shipping</a></li>
+                        <li>
+                            <a class="breadcrumbs--active-element" href="">Payment Method</a>
+                        </li>
+                        <li><a href="">Confirmation</a></li>
+                    </ol>
+                </div>
+                <div class="co-header__close-button">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="co-body">
+                <div class="co-body__payment">
+                    <div class="co-body__wallet">
+                        <div class="wallet__title">
+                            <p class="co-body--title-gray">Wallet</p>
+                            <hr />
+                        </div>
+                        <div class="wallet__options">
+                            <div>
+                                <img src="/html/images/card/discover.png" alt="Discover Card" width="80%" />
+                                <p class="font-small">Ending with 8899</p>
+                            </div>
+                            <div class="wallet__options--active">
+                                <img src="/html/images/card/mastercard.png" alt="Master Card" width="80%" />
+                                <p class="font-small">Ending with 8899</p>
+                            </div>
+                            <div>
+                                <img src="/html/images/card/visa.png" alt="Visa Card" width="80%" />
+                                <p class="font-small">Ending with 8899</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="co-body__newcard">
+                        <div class="newcard__title">
+                            <p class="co-body--title-gray">New Card</p>
+                            <hr />
+                        </div>
+                        <div class="newcard__form">
+                            <form action="#" id="usrform" method="GET">
+                                <input type="text" name="name" class="form-input" placeholder="Name on Card" />
+                                <br/><br/>
+                                <input type="text" name="card_no" class="form-input" placeholder="XXXX-XXXX-XXXX-XXXX" />
+                                <br/><br/>
+
+                                <input type="text" name="expiry" class="form-input form-input--half" placeholder="YYYY-MM" />
+                                <input type="password" name="cvv" class="form-input form-input--half" placeholder="CVV" maxlength="3" />
+
+
+                                <br/><br/>
+
+                                <input type="button" name="submit" value="CONTINUE" class="form-input form-input--button" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="co-body__cart">
+                    <div class="cart__items">
+                        <div class="c-item">
+                            <div class="c-item__img">
+                                <img src="/html/images/products/mobile-holder.jpg" alt="Discover Card" width="70%" />
+                            </div>
+                            <div class="c-item__details">
+                                <p class="font-bold">Mobile Holder</p>
+                                <p class="sub-heading font-italic font-small" style="padding-top: 5px;">Black</p>
+                                <p class="sub-heading font-bold font-small">Quantity : 1</p>
+                            </div>
+                            <div class="c-item__total">
+                                <p class="font-bold">$ 10.00</p>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <div class="c-item__img">
+                                <img src="/html/images/products/rado.jpg" alt="Discover Card" width="70%" />
+                            </div>
+                            <div class="c-item__details">
+                                <p class="font-bold">Rado Watch</p>
+                                <p class="sub-heading font-italic font-small" style="padding-top: 5px;">Black</p>
+                                <p class="sub-heading font-bold font-small">Quantity : 1</p>
+                            </div>
+                            <div class="c-item__total">
+                                <p class="font-bold">$ 10.00</p>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <div class="c-item__img">
+                                <img src="/html/images/products/usb-c-2-micro.jpeg" alt="Discover Card" width="70%" />
+                            </div>
+                            <div class="c-item__details">
+                                <p class="font-bold">C Type to Micro Converter</p>
+                                <p class="sub-heading font-italic font-small" style="padding-top: 5px;">Black</p>
+                                <p class="sub-heading font-bold font-small">Quantity : 1</p>
+                            </div>
+                            <div class="c-item__total">
+                                <p class="font-bold">$ 10.00</p>
+                            </div>
+                        </div>
+                        <div class="c-item">
+                            <div class="c-item__img">
+                                <img src="/html/images/products/hard-case.jpg" alt="Discover Card" width="70%" />
+                            </div>
+                            <div class="c-item__details">
+                                <p class="font-bold">Mobile Case</p>
+                                <p class="sub-heading font-italic font-small" style="padding-top: 5px;">Black</p>
+                                <p class="sub-heading font-bold font-small">Quantity : 1</p>
+                            </div>
+                            <div class="c-item__total">
+                                <p class="font-bold">$ 10.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__pricing">
+                        <div class="pricing__calc">
+                            <div class="pricing__calc-type">
+                                <p class="sub-heading font-med">Sub Total</p>
+                                <p class="sub-heading font-med">Shipping</p>
+                                <p class="sub-heading font-med">Taxes</p>
+                            </div>
+                            <div class="pricing__calc-rate">
+                                <p class="font-bold font-med">$ 100.00</p>
+                                <p class="font-bold font-med">$ 10.00</p>
+                                <p class="font-bold font-med">$ 5.00</p>
+                            </div>
+                        </div>
+                        <div class="pricing__total">
+                            <div class="pricing__calc-type">
+                                <p class="font-bold font-med">Total</p>
+                            </div>
+                            <div class="pricing__calc-rate">
+                                <p class="font-med font-bold">$ 115.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
