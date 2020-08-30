@@ -1,3 +1,3 @@
 # javascript-react-ui
 
-# Created by FatherSons Inc.
+# Created by FatherSons Inc
